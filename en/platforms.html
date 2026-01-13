@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platforms | Indigenous Languages Platform</title>
+    <meta name="description"
+        content="Explore our digital platforms for Brazilian indigenous languages: dictionaries, linguistic corpora, and educational materials.">
+    <link rel="alternate" hreflang="en" href="/en/platforms.html">
+    <link rel="alternate" hreflang="es" href="/es/plataformas.html">
+    <link rel="alternate" hreflang="pt" href="/plataformas.html">
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <link href="/src/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-terra-50">
+    <header class="fixed top-0 left-0 right-0 z-50 glass">
+        <nav class="container-wide flex items-center justify-between px-4 md:px-6 py-3">
+            <a href="/en/" class="flex items-center gap-3">
+                <img src="/assets/logo.svg" alt="Logo" class="w-10 h-10">
+                <span class="font-serif text-lg font-semibold text-terra-700 hidden sm:block">Indigenous Languages
+                    Platform</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6">
+                <a href="/en/" class="nav-link">Home</a>
+                <a href="/en/platforms.html" class="nav-link nav-link-active">Platforms</a>
+                <a href="/en/team.html" class="nav-link">Team</a>
+                <a href="/en/contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="lang-switcher">
+                    <button onclick="switchLanguage('pt')" class="lang-btn-inactive">PT</button>
+                    <button class="lang-btn-active">EN</button>
+                    <button onclick="switchLanguage('es')" class="lang-btn-inactive">ES</button>
+                </div>
+                <button id="menu-toggle" class="md:hidden p-2">
+                    <svg class="w-6 h-6 text-ink-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="flex justify-between items-center p-4 border-b border-terra-200">
+            <span class="font-serif text-lg font-semibold text-terra-700">Menu</span>
+            <button id="menu-close" class="p-2">
+                <svg class="w-6 h-6 text-ink-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <nav class="p-6 space-y-4">
+            <a href="/en/" class="mobile-nav-link block text-lg text-ink-700 py-2">Home</a>
+            <a href="/en/platforms.html"
+                class="mobile-nav-link block text-lg text-ember-600 py-2 font-semibold">Platforms</a>
+            <a href="/en/team.html" class="mobile-nav-link block text-lg text-ink-700 py-2">Team</a>
+            <a href="/en/contact.html" class="mobile-nav-link block text-lg text-ink-700 py-2">Contact</a>
+        </nav>
+    </div>
+
+    <section class="pt-32 pb-16 bg-gradient-to-br from-terra-100 to-terra-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background-image: url('/assets/patterns/diamond-grid.svg');">
+        </div>
+        <div class="container-wide px-4 md:px-6 relative">
+            <div class="text-center">
+                <h1 class="text-display-md md:text-display-lg font-serif font-bold text-ink-900 mb-4">Our Platforms</h1>
+                <p class="text-xl text-ink-600 max-w-2xl mx-auto">Dictionaries, linguistic corpora, ethnobotanical data,
+                    and educational materials for each partner language.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-white">
+        <div class="container-wide">
+            <div class="mb-16">
+                <h2 class="font-serif text-2xl font-semibold text-ink-900 mb-8 flex items-center gap-3">
+                    <span class="w-3 h-3 bg-forest-500 rounded-full"></span>Active Platforms
+                </h2>
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="card p-8 reveal">
+                        <div class="flex items-start justify-between mb-6">
+                            <div>
+                                <h3 class="font-serif text-2xl font-semibold text-ink-900 mb-2">Bororo (Boe Eno Moto)
+                                </h3>
+                                <span class="badge-active">Active</span>
+                            </div>
+                        </div>
+                        <p class="text-ink-600 mb-6">The project's most complete platform, with comprehensive resources
+                            for learning and documenting the Bororo language.</p>
+                        <div class="grid sm:grid-cols-2 gap-4 mb-6">
+                            <a href="https://boeenomoto.onrender.com/dictionary" target="_blank"
+                                class="flex items-center gap-3 p-3 bg-terra-50 rounded-lg hover:bg-terra-100 transition-colors">
+                                <div class="w-10 h-10 bg-terra-200 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-terra-700" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                    </svg>
+                                </div>
+                                <span class="font-medium text-ink-700">Dictionary</span>
+                            </a>
+                            <a href="https://boeenomoto.onrender.com/corpus" target="_blank"
+                                class="flex items-center gap-3 p-3 bg-terra-50 rounded-lg hover:bg-terra-100 transition-colors">
+                                <div class="w-10 h-10 bg-terra-200 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-terra-700" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </div>
+                                <span class="font-medium text-ink-700">Corpus</span>
+                            </a>
+                            <a href="https://boeenomoto.onrender.com/Ethnobotany" target="_blank"
+                                class="flex items-center gap-3 p-3 bg-terra-50 rounded-lg hover:bg-terra-100 transition-colors">
+                                <div class="w-10 h-10 bg-forest-100 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-forest-700" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                    </svg>
+                                </div>
+                                <span class="font-medium text-ink-700">Ethnobotany</span>
+                            </a>
+                            <a href="https://boeenomoto.onrender.com/Fauna" target="_blank"
+                                class="flex items-center gap-3 p-3 bg-terra-50 rounded-lg hover:bg-terra-100 transition-colors">
+                                <div class="w-10 h-10 bg-forest-100 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-forest-700" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                </div>
+                                <span class="font-medium text-ink-700">Fauna</span>
+                            </a>
+                            <a href="https://boeenomoto.onrender.com/escola" target="_blank"
+                                class="flex items-center gap-3 p-3 bg-ember-50 rounded-lg hover:bg-ember-100 transition-colors sm:col-span-2">
+                                <div class="w-10 h-10 bg-ember-100 rounded-lg flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-ember-700" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                    </svg>
+                                </div>
+                                <span class="font-medium text-ink-700">School Materials</span>
+                            </a>
+                        </div>
+                        <a href="https://boeenomoto.onrender.com" target="_blank"
+                            class="btn-primary w-full justify-center">Access Full Platform</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <h2 class="font-serif text-2xl font-semibold text-ink-900 mb-8 flex items-center gap-3">
+                    <span class="w-3 h-3 bg-amber-500 rounded-full"></span>Beta Platforms
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card p-6 reveal">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="font-serif text-xl font-semibold text-ink-900">Xavante</h3>
+                            <span class="badge-beta">Beta</span>
+                        </div>
+                        <p class="text-ink-600 text-sm mb-4">Dictionary and fauna information in the Xavante language.
+                        </p>
+                        <ul class="feature-list mb-4">
+                            <li class="feature-item">Dictionary</li>
+                            <li class="feature-item">Fauna</li>
+                        </ul>
+                        <a href="https://xavante.pythonanywhere.com" target="_blank"
+                            class="btn-secondary w-full justify-center text-sm">Access</a>
+                    </div>
+                    <div class="card p-6 reveal animation-delay-100">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="font-serif text-xl font-semibold text-ink-900">Enawenê-Nawê</h3>
+                            <span class="badge-beta">Beta</span>
+                        </div>
+                        <p class="text-ink-600 text-sm mb-4">Digital dictionary of the Enawenê-Nawê language.</p>
+                        <ul class="feature-list mb-4">
+                            <li class="feature-item">Dictionary</li>
+                        </ul>
+                        <a href="https://enawenenawe.pythonanywhere.com" target="_blank"
+                            class="btn-secondary w-full justify-center text-sm">Access</a>
+                    </div>
+                    <div class="card p-6 reveal animation-delay-200">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="font-serif text-xl font-semibold text-ink-900">Akuntsu</h3>
+                            <span class="badge-beta">Beta</span>
+                        </div>
+                        <p class="text-ink-600 text-sm mb-4">Lexicon and parallel texts of the Akuntsu language.</p>
+                        <ul class="feature-list mb-4">
+                            <li class="feature-item">Lexicon</li>
+                            <li class="feature-item">Parallel texts</li>
+                        </ul>
+                        <a href="https://akuntsu.pythonanywhere.com" target="_blank"
+                            class="btn-secondary w-full justify-center text-sm">Access</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="font-serif text-2xl font-semibold text-ink-900 mb-8 flex items-center gap-3">
+                    <span class="w-3 h-3 bg-ink-400 rounded-full"></span>Coming Soon
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card p-6 bg-ink-50 reveal">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="font-serif text-xl font-semibold text-ink-700">Pareci</h3>
+                            <span class="badge-soon">Coming soon</span>
+                        </div>
+                        <p class="text-ink-500 text-sm mb-4">Lexicon and parallel texts in development.</p>
+                        <ul class="feature-list opacity-60 mb-4">
+                            <li class="feature-item">Lexicon</li>
+                            <li class="feature-item">Parallel texts</li>
+                        </ul>
+                    </div>
+                    <div class="card p-6 bg-ink-50 reveal animation-delay-100">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="font-serif text-xl font-semibold text-ink-700">Rikbaktsa</h3>
+                            <span class="badge-soon">Coming soon</span>
+                        </div>
+                        <p class="text-ink-500 text-sm mb-4">Platform in planning phase.</p>
+                        <ul class="feature-list opacity-60 mb-4">
+                            <li class="feature-item">Lexicon</li>
+                            <li class="feature-item">Parallel texts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-alt">
+        <div class="container-narrow text-center">
+            <h2 class="section-heading reveal">Want to contribute?</h2>
+            <p class="section-subheading mx-auto mb-8 reveal">If you are a researcher, educator, or representative of an
+                indigenous community, contact us to discuss partnerships.</p>
+            <a href="/en/contact.html" class="btn-primary reveal">Contact Us</a>
+        </div>
+    </section>
+
+    <footer class="bg-terra-900 text-terra-200 py-16">
+        <div class="container-wide px-4 md:px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/assets/logo.svg" alt="Logo" class="w-10 h-10">
+                        <span class="font-serif text-lg font-semibold text-white">Indigenous Languages Platform</span>
+                    </div>
+                    <p class="text-sm text-terra-300">Revitalization and documentation of Brazilian indigenous languages
+                        with community governance.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/en/" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/en/platforms.html" class="hover:text-white transition-colors">Platforms</a></li>
+                        <li><a href="/en/team.html" class="hover:text-white transition-colors">Team</a></li>
+                        <li><a href="/en/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>info@plataformasindigenas.org</li>
+                        <li>Mato Grosso, Brazil ↔ Germany</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Social Media</h4>
+                    <a href="https://instagram.com/plataformasindigenas" target="_blank"
+                        class="inline-flex items-center gap-2 text-sm hover:text-white transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                        @plataformasindigenas
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-terra-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-terra-400">© 2024 Indigenous Languages Platform. All rights reserved.</p>
+                <p class="text-sm text-terra-400">LGPD Compliance</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
