@@ -1,126 +1,354 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto | Plataforma de Lenguas Indígenas</title>
-  <link rel="icon" type="image/svg+xml" href="/logo.svg">
-  <script type="module" crossorigin src="/assets/styles-BDqXG3CD.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/styles-CgG-KqpS.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Plataforma de Lenguas Indígenas</title>
+    <meta name="description"
+        content="Contacta a la Plataforma de Lenguas Indígenas para asociaciones, colaboraciones o más información sobre nuestro trabajo.">
+    <link rel="alternate" hreflang="en" href="/assets/contact-BuQ_W8T3.html">
+    <link rel="alternate" hreflang="es" href="/assets/contacto-DV0YZZ04.html">
+    <link rel="alternate" hreflang="pt" href="/assets/contato-UPmx6ZqQ.html">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <script type="module" crossorigin src="/assets/styles-C6soYK4w.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/styles-BlAaqDnu.css">
 </head>
+
 <body class="bg-terra-50">
-  <header class="fixed top-0 left-0 right-0 z-50 glass">
-    <nav class="container-wide flex items-center justify-between px-4 md:px-6 py-3">
-      <a href="/es/" class="flex items-center gap-3">
-        <img src="/logo.svg" alt="Logo" class="w-10 h-10">
-        <span class="font-serif text-lg font-semibold text-terra-700 hidden sm:block">Plataforma de Lenguas Indígenas</span>
-      </a>
-      <div class="hidden md:flex items-center gap-6">
-        <a href="/es/" class="nav-link">Inicio</a>
-        <a href="/es/plataformas.html" class="nav-link">Plataformas</a>
-        <a href="/es/equipo.html" class="nav-link">Equipo</a>
-        <a href="/es/contacto.html" class="nav-link nav-link-active">Contacto</a>
-      </div>
-      <div class="flex items-center gap-4">
-        <div class="lang-switcher">
-          <button onclick="switchLanguage('pt')" class="lang-btn-inactive">PT</button>
-          <button onclick="switchLanguage('en')" class="lang-btn-inactive">EN</button>
-          <button class="lang-btn-active">ES</button>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass">
+        <nav class="container-wide flex items-center justify-between px-4 md:px-6 py-3">
+            <a href="/es/" class="flex items-center gap-3">
+                <img src="/logo.svg" alt="Logo" class="w-10 h-10">
+                <span class="font-serif text-lg font-semibold text-terra-700 hidden sm:block">Plataforma de Lenguas
+                    Indígenas</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6">
+                <a href="/es/" class="nav-link">Inicio</a>
+                <a href="/es/plataformas.html" class="nav-link">Plataformas</a>
+                <a href="/es/equipo.html" class="nav-link">Equipo</a>
+                <a href="/es/contacto.html" class="nav-link nav-link-active">Contacto</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="lang-switcher">
+                    <button onclick="switchLanguage('pt')" class="lang-btn-inactive">PT</button>
+                    <button onclick="switchLanguage('en')" class="lang-btn-inactive">EN</button>
+                    <button class="lang-btn-active">ES</button>
+                </div>
+                <button id="menu-toggle" class="md:hidden p-2">
+                    <svg class="w-6 h-6 text-ink-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-  <section class="pt-32 pb-16 bg-gradient-to-br from-terra-100 to-terra-50">
-    <div class="container-wide px-4 md:px-6">
-      <div class="text-center">
-        <h1 class="text-display-md md:text-display-lg font-serif font-bold text-ink-900 mb-4">Contáctenos</h1>
-        <p class="text-xl text-ink-600 max-w-2xl mx-auto">Contáctenos para asociaciones, colaboraciones o más información.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-white">
-    <div class="container-wide">
-      <div class="grid lg:grid-cols-2 gap-16">
-        <div class="reveal">
-          <h2 class="font-serif text-2xl font-semibold text-ink-900 mb-8">Información de Contacto</h2>
-          <div class="space-y-8">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-terra-100 rounded-xl flex items-center justify-center">
-                <svg class="w-6 h-6 text-terra-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="flex justify-between items-center p-4 border-b border-terra-200">
+            <span class="font-serif text-lg font-semibold text-terra-700">Menú</span>
+            <button id="menu-close" class="p-2">
+                <svg class="w-6 h-6 text-ink-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
-              </div>
-              <div>
-                <h3 class="font-semibold text-ink-900 mb-1">Email</h3>
-                <a href="mailto:info@plataformasindigenas.org" class="text-ember-600 hover:text-ember-700">info@plataformasindigenas.org</a>
-              </div>
-            </div>
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-terra-100 rounded-xl flex items-center justify-center">
-                <svg class="w-6 h-6 text-terra-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-semibold text-ink-900 mb-1">Ubicación</h3>
-                <p class="text-ink-600">Mato Grosso, Brasil ↔ Alemania</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
-                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
-              </div>
-              <div>
-                <h3 class="font-semibold text-ink-900 mb-1">Instagram</h3>
-                <a href="https://instagram.com/plataformasindigenas" target="_blank" class="text-ember-600 hover:text-ember-700">@plataformasindigenas</a>
-                <p class="text-ink-500 text-sm mt-1">Nuestro canal principal de comunicación</p>
-              </div>
-            </div>
-          </div>
+            </button>
         </div>
-        <div class="reveal">
-          <div class="card p-8">
-            <h2 class="font-serif text-2xl font-semibold text-ink-900 mb-6">Enviar Mensaje</h2>
-            <form action="https://formsubmit.co/info@plataformasindigenas.org" method="POST" class="space-y-6">
-              <input type="hidden" name="_subject" value="Nuevo mensaje del sitio PLI">
-              <div>
-                <label for="name" class="block text-sm font-medium text-ink-700 mb-2">Nombre completo</label>
-                <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl border border-terra-200 focus:border-ember-500 outline-none">
-              </div>
-              <div>
-                <label for="email" class="block text-sm font-medium text-ink-700 mb-2">Email</label>
-                <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-terra-200 focus:border-ember-500 outline-none">
-              </div>
-              <div>
-                <label for="subject" class="block text-sm font-medium text-ink-700 mb-2">Asunto</label>
-                <select id="subject" name="subject" required class="w-full px-4 py-3 rounded-xl border border-terra-200 focus:border-ember-500 outline-none bg-white">
-                  <option value="">Seleccione un asunto</option>
-                  <option value="partnership">Propuesta de asociación</option>
-                  <option value="research">Colaboración en investigación</option>
-                  <option value="education">Educación y materiales</option>
-                  <option value="other">Otro</option>
-                </select>
-              </div>
-              <div>
-                <label for="message" class="block text-sm font-medium text-ink-700 mb-2">Mensaje</label>
-                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-xl border border-terra-200 focus:border-ember-500 outline-none resize-none"></textarea>
-              </div>
-              <button type="submit" class="btn-primary w-full justify-center">Enviar Mensaje</button>
-            </form>
-          </div>
+        <nav class="p-6 space-y-4">
+            <a href="/es/" class="mobile-nav-link block text-lg text-ink-700 py-2">Inicio</a>
+            <a href="/es/plataformas.html" class="mobile-nav-link block text-lg text-ink-700 py-2">Plataformas</a>
+            <a href="/es/equipo.html" class="mobile-nav-link block text-lg text-ink-700 py-2">Equipo</a>
+            <a href="/es/contacto.html" class="mobile-nav-link block text-lg text-ember-600 py-2 font-semibold">Contacto</a>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-terra-100 to-terra-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background-image: url('/patterns/river.svg');"></div>
+        <div class="container-wide px-4 md:px-6 relative">
+            <div class="text-center">
+                <h1 class="text-display-md md:text-display-lg font-serif font-bold text-ink-900 mb-4">Contáctanos</h1>
+                <p class="text-xl text-ink-600 max-w-2xl mx-auto">Habla con nosotros para asociaciones, colaboraciones
+                    o más información sobre nuestro trabajo con lenguas indígenas.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="bg-terra-900 text-terra-200 py-12">
-    <div class="container-wide px-4 text-center">
-      <p class="text-sm text-terra-400">© 2026 Plataforma de Lenguas Indígenas. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+    <!-- Contact Content -->
+    <section class="section bg-white">
+        <div class="container-wide">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div class="reveal">
+                    <h2 class="font-serif text-2xl font-semibold text-ink-900 mb-8">Información de Contacto</h2>
 
-  <script type="module" src="/js/main.js"></script>
+                    <div class="space-y-8">
+                        <!-- Email -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-terra-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-terra-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-ink-900 mb-1">Email</h3>
+                                <a href="mailto:info@plataformasindigenas.org"
+                                    class="text-ember-600 hover:text-ember-700 transition-colors">info@plataformasindigenas.org</a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-terra-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-terra-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-ink-900 mb-1">Ubicación</h3>
+                                <p class="text-ink-600">Mato Grosso, Brasil ↔ Alemania</p>
+                                <p class="text-ink-500 text-sm mt-1">Colaboración internacional con investigadores y
+                                    educadores</p>
+                            </div>
+                        </div>
+
+                        <!-- Instagram -->
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-ink-900 mb-1">Instagram</h3>
+                                <a href="https://instagram.com/plataformasindigenas" target="_blank"
+                                    class="text-ember-600 hover:text-ember-700 transition-colors">@plataformasindigenas</a>
+                                <p class="text-ink-500 text-sm mt-1">Nuestro canal principal de comunicación</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Partnership Types -->
+                    <div class="mt-12 p-6 bg-terra-50 rounded-2xl">
+                        <h3 class="font-serif text-lg font-semibold text-ink-900 mb-4">Tipos de Asociación</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-forest-600 mt-0.5 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-ink-600"><strong class="text-ink-900">Escuelas indígenas:</strong>
+                                    Implementación de materiales y capacitación</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-forest-600 mt-0.5 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-ink-600"><strong class="text-ink-900">Universidades:</strong>
+                                    Colaboración en investigación y documentación</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-forest-600 mt-0.5 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-ink-600"><strong class="text-ink-900">ONGs:</strong> Apoyo a proyectos
+                                    de revitalización lingüística</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-forest-600 mt-0.5 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-ink-600"><strong class="text-ink-900">Secretarías de Educación:</strong>
+                                    Integración curricular</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="reveal animation-delay-200">
+                    <div class="card p-8">
+                        <h2 class="font-serif text-2xl font-semibold text-ink-900 mb-6">Enviar un Mensaje</h2>
+                        <form action="https://formsubmit.co/info@plataformasindigenas.org" method="POST"
+                            class="space-y-6">
+                            <input type="hidden" name="_subject" value="Nuevo mensaje del sitio PLI">
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-ink-700 mb-2">Nombre
+                                    completo</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 rounded-xl border border-terra-200 focus:border-ember-500 focus:ring-2 focus:ring-ember-500/20 outline-none transition-all">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-ink-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 rounded-xl border border-terra-200 focus:border-ember-500 focus:ring-2 focus:ring-ember-500/20 outline-none transition-all">
+                            </div>
+
+                            <div>
+                                <label for="organization" class="block text-sm font-medium text-ink-700 mb-2">Organización
+                                    (opcional)</label>
+                                <input type="text" id="organization" name="organization"
+                                    class="w-full px-4 py-3 rounded-xl border border-terra-200 focus:border-ember-500 focus:ring-2 focus:ring-ember-500/20 outline-none transition-all">
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-ink-700 mb-2">Asunto</label>
+                                <select id="subject" name="subject" required
+                                    class="w-full px-4 py-3 rounded-xl border border-terra-200 focus:border-ember-500 focus:ring-2 focus:ring-ember-500/20 outline-none transition-all bg-white">
+                                    <option value="">Seleccione un asunto</option>
+                                    <option value="partnership">Propuesta de asociación</option>
+                                    <option value="research">Colaboración en investigación</option>
+                                    <option value="education">Educación y materiales</option>
+                                    <option value="media">Prensa y medios</option>
+                                    <option value="other">Otro</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-ink-700 mb-2">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    class="w-full px-4 py-3 rounded-xl border border-terra-200 focus:border-ember-500 focus:ring-2 focus:ring-ember-500/20 outline-none transition-all resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary w-full justify-center">Enviar Mensaje</button>
+
+                            <p class="text-xs text-ink-500 text-center">Al enviar, aceptas nuestra política de privacidad
+                                conforme a la LGPD.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-alt">
+        <div class="container-narrow">
+            <h2 class="section-heading text-center mb-12 reveal">Preguntas Frecuentes</h2>
+            <div class="space-y-4">
+                <details class="card p-6 group reveal">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-serif font-semibold text-ink-900">¿Cómo se manejan los derechos de autor de
+                            los materiales producidos?</span>
+                        <svg class="w-5 h-5 text-ink-500 group-open:rotate-180 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <p class="text-ink-600 mt-4">Todos los materiales reciben un DOI permanente. La autoría incluye a
+                        hablantes, profesores, investigadores y liderazgos comunitarios según lo acordado con la
+                        comunidad.</p>
+                </details>
+
+                <details class="card p-6 group reveal animation-delay-100">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-serif font-semibold text-ink-900">¿Quién puede convertirse en socio?</span>
+                        <svg class="w-5 h-5 text-ink-500 group-open:rotate-180 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <p class="text-ink-600 mt-4">Escuelas indígenas, universidades, secretarías de educación, ONGs e
+                        instituciones interesadas en contribuir éticamente a la revitalización lingüística.</p>
+                </details>
+
+                <details class="card p-6 group reveal animation-delay-200">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-serif font-semibold text-ink-900">¿La tecnología reemplaza el conocimiento
+                            tradicional?</span>
+                        <svg class="w-5 h-5 text-ink-500 group-open:rotate-180 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <p class="text-ink-600 mt-4">No. La tecnología es una herramienta para amplificar y preservar los
+                        conocimientos tradicionales. Todo desarrollo se realiza en asociación con las comunidades.</p>
+                </details>
+
+                <details class="card p-6 group reveal animation-delay-300">
+                    <summary class="flex items-center justify-between cursor-pointer list-none">
+                        <span class="font-serif font-semibold text-ink-900">¿Cómo impacta el proyecto en la educación
+                            escolar?</span>
+                        <svg class="w-5 h-5 text-ink-500 group-open:rotate-180 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </summary>
+                    <p class="text-ink-600 mt-4">Proporcionamos materiales pedagógicos alineados con el currículo
+                        nacional, adaptados a las realidades locales. Los docentes reciben formación específica.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-terra-900 text-terra-200 py-16">
+        <div class="container-wide px-4 md:px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/logo.svg" alt="Logo" class="w-10 h-10">
+                        <span class="font-serif text-lg font-semibold text-white">Plataforma de Lenguas Indígenas</span>
+                    </div>
+                    <p class="text-sm text-terra-300">Revitalización y documentación de lenguas indígenas brasileñas
+                        con gobernanza comunitaria.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/es/" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="/es/plataformas.html" class="hover:text-white transition-colors">Plataformas</a></li>
+                        <li><a href="/es/equipo.html" class="hover:text-white transition-colors">Equipo</a></li>
+                        <li><a href="/es/contacto.html" class="hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>info@plataformasindigenas.org</li>
+                        <li>Mato Grosso, Brasil ↔ Alemania</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Redes Sociales</h4>
+                    <a href="https://instagram.com/plataformasindigenas" target="_blank"
+                        class="inline-flex items-center gap-2 text-sm hover:text-white transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                        @plataformasindigenas
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-terra-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-terra-400">© 2026 Plataforma de Lenguas Indígenas. Todos los derechos reservados.</p>
+                <p class="text-sm text-terra-400">Cumplimiento con LGPD</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
 </body>
+
 </html>

@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team | Indigenous Languages Platform</title>
-    <meta name="description" content="Meet the team behind the Indigenous Languages Platform.">
+    <meta name="description"
+        content="Meet the multidisciplinary team behind the Indigenous Languages Platform: linguists, engineers, educators, and researchers.">
+    <link rel="alternate" hreflang="en" href="/assets/team-CMcbn0T0.html">
+    <link rel="alternate" hreflang="es" href="/assets/equipo-CZ4Eph1l.html">
+    <link rel="alternate" hreflang="pt" href="/assets/equipe-D-6erqb6.html">
     <link rel="icon" type="image/svg+xml" href="/logo.svg">
-  <script type="module" crossorigin src="/assets/styles-BDqXG3CD.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/styles-CgG-KqpS.css">
+  <script type="module" crossorigin src="/assets/styles-C6soYK4w.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/styles-BlAaqDnu.css">
 </head>
 
 <body class="bg-terra-50">
+    <!-- Navigation -->
     <header class="fixed top-0 left-0 right-0 z-50 glass">
         <nav class="container-wide flex items-center justify-between px-4 md:px-6 py-3">
             <a href="/en/" class="flex items-center gap-3">
@@ -31,69 +36,146 @@
                     <button class="lang-btn-active">EN</button>
                     <button onclick="switchLanguage('es')" class="lang-btn-inactive">ES</button>
                 </div>
+                <button id="menu-toggle" class="md:hidden p-2">
+                    <svg class="w-6 h-6 text-ink-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
 
-    <section class="pt-32 pb-16 bg-gradient-to-br from-terra-100 to-terra-50">
-        <div class="container-wide px-4 md:px-6">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="flex justify-between items-center p-4 border-b border-terra-200">
+            <span class="font-serif text-lg font-semibold text-terra-700">Menu</span>
+            <button id="menu-close" class="p-2">
+                <svg class="w-6 h-6 text-ink-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <nav class="p-6 space-y-4">
+            <a href="/en/" class="mobile-nav-link block text-lg text-ink-700 py-2">Home</a>
+            <a href="/en/platforms.html" class="mobile-nav-link block text-lg text-ink-700 py-2">Platforms</a>
+            <a href="/en/team.html" class="mobile-nav-link block text-lg text-ember-600 py-2 font-semibold">Team</a>
+            <a href="/en/contact.html" class="mobile-nav-link block text-lg text-ink-700 py-2">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-terra-100 to-terra-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background-image: url('/patterns/weave.svg');"></div>
+        <div class="container-wide px-4 md:px-6 relative">
             <div class="text-center">
                 <h1 class="text-display-md md:text-display-lg font-serif font-bold text-ink-900 mb-4">Our Team</h1>
                 <p class="text-xl text-ink-600 max-w-2xl mx-auto">A multidisciplinary team united by commitment to
-                    linguistic revitalization.</p>
+                    language revitalization and respect for Indigenous communities.</p>
             </div>
         </div>
     </section>
 
+    <!-- Team Grid -->
     <section class="section bg-white">
         <div class="container-wide">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Fabricio -->
                 <div class="card p-8 text-center reveal">
                     <img src="/images/fabricio-ferraz.jpeg" alt="Fabrício Gerardi" class="team-photo mx-auto mb-6">
                     <h3 class="font-serif text-xl font-semibold text-ink-900 mb-1">Fabrício Ferraz Gerardi</h3>
                     <p class="text-ember-600 font-medium mb-4">Computational Linguistics</p>
-                    <p class="text-ink-600 text-sm">PhD in Linguistics, specialist in language structure and indigenous
-                        language documentation.</p>
+                    <p class="text-ink-600 text-sm mb-4">PhD in Linguistics, master's in Computational Linguistics,
+                        specialist in language structure. Researches documentation and revitalization of Indigenous
+                        languages, working in Mato Grosso and partnerships with schools and universities.</p>
+                    <a href="https://www.linkedin.com/in/fabr%C3%ADcio-ferraz-gerardi-539258390" target="_blank"
+                        class="inline-flex items-center gap-2 text-sm text-terra-600 hover:text-ember-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        LinkedIn
+                    </a>
                 </div>
-                <div class="card p-8 text-center reveal">
+
+                <!-- Gustavo -->
+                <div class="card p-8 text-center reveal animation-delay-100">
                     <img src="/images/gustavo.jpeg" alt="Gustavo Polleti" class="team-photo mx-auto mb-6">
                     <h3 class="font-serif text-xl font-semibold text-ink-900 mb-1">Gustavo Polleti</h3>
-                    <p class="text-ember-600 font-medium mb-4">Engineering & Coordination</p>
-                    <p class="text-ink-600 text-sm">ML engineer with experience at Nubank and Wildlife Studios.
-                        Technical lead.</p>
+                    <p class="text-ember-600 font-medium mb-4">Engineering and Coordination</p>
+                    <p class="text-ink-600 text-sm mb-4">Engineer with experience in machine learning and technology
+                        infrastructure. Over 6 years as a machine learning engineer at companies such as Nubank and
+                        Wildlife Studios. Technical lead of the project.</p>
+                    <a href="https://www.linkedin.com/in/gpolleti" target="_blank"
+                        class="inline-flex items-center gap-2 text-sm text-terra-600 hover:text-ember-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        LinkedIn
+                    </a>
                 </div>
-                <div class="card p-8 text-center reveal">
-                    <img src="/images/michel.jpeg" alt="Michel Correa" class="team-photo mx-auto mb-6">
+
+                <!-- Michel -->
+                <div class="card p-8 text-center reveal animation-delay-200">
+                    <img src="/images/michel.jpeg" alt="Michel Correa da Silva" class="team-photo mx-auto mb-6">
                     <h3 class="font-serif text-xl font-semibold text-ink-900 mb-1">Michel Correa da Silva</h3>
                     <p class="text-ember-600 font-medium mb-4">Indigenous School Director</p>
-                    <p class="text-ink-600 text-sm">Director of the Enawenê-Nawê State Indigenous School.</p>
+                    <p class="text-ink-600 text-sm mb-4">Public servant of the State of Mato Grosso for nine years, with
+                        a full degree in Mathematics and specialization in Natural Sciences and Mathematics at IFMT. For
+                        two years he has been Director of the Enawenê-Nawê State Indigenous School.</p>
                 </div>
-                <div class="card p-8 text-center reveal">
+
+                <!-- Duda -->
+                <div class="card p-8 text-center reveal animation-delay-300">
                     <img src="/images/duda.jpeg" alt="Maria Eduarda Correr" class="team-photo mx-auto mb-6">
-                    <h3 class="font-serif text-xl font-semibold text-ink-900 mb-1">Maria Eduarda Correr</h3>
+                    <h3 class="font-serif text-xl font-semibold text-ink-900 mb-1">Maria Eduarda Correr (Duda)</h3>
                     <p class="text-ember-600 font-medium mb-4">Pedagogy</p>
-                    <p class="text-ink-600 text-sm">Specialization in Neuroscience and Learning from USP.</p>
+                    <p class="text-ink-600 text-sm mb-4">Graduated in Letters - Portuguese and Spanish (BA and teaching
+                        degree) from USP. Specialization in Neuroscience and Learning from USP (PECEGE-USP). Researches
+                        teaching methodologies and practices with neuroscientific foundations.</p>
                 </div>
-                <div class="card p-8 text-center reveal">
-                    <img src="/images/joseicaro-wpraiz.jpg" alt="José Ícaro" class="team-photo mx-auto mb-6">
-                    <h3 class="font-serif text-xl font-semibold text-ink-900 mb-1">José Ícaro B. Clemente</h3>
-                    <p class="text-ember-600 font-medium mb-4">AI & ML Engineering</p>
-                    <p class="text-ink-600 text-sm">AI solutions architect, expert in language models and RAG.</p>
+
+                <!-- Jose Icaro -->
+                <div class="card p-8 text-center reveal animation-delay-400">
+                    <img src="/images/joseicaro-wpraiz.jpg" alt="José Ícaro Bezerra Clemente"
+                        class="team-photo mx-auto mb-6">
+                    <h3 class="font-serif text-xl font-semibold text-ink-900 mb-1">José Ícaro Bezerra Clemente</h3>
+                    <p class="text-ember-600 font-medium mb-4">AI and ML Engineering</p>
+                    <p class="text-ink-600 text-sm mb-4">AI solutions architect, specialist in prompt engineering in
+                        Brazil since 2020. Specialist in language models, RAG, and semantic infrastructure.</p>
+                    <a href="https://www.linkedin.com/in/jibcl" target="_blank"
+                        class="inline-flex items-center gap-2 text-sm text-terra-600 hover:text-ember-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        LinkedIn
+                    </a>
                 </div>
-                <div class="card p-8 text-center reveal">
-                    <img src="/images/fernando.jpg" alt="Fernando Orphão" class="team-photo mx-auto mb-6">
+
+                <!-- Fernando -->
+                <div class="card p-8 text-center reveal animation-delay-500">
+                    <img src="/images/fernando.jpg" alt="Fernando Orphão de Carvalho" class="team-photo mx-auto mb-6">
                     <h3 class="font-serif text-xl font-semibold text-ink-900 mb-1">Fernando Orphão de Carvalho</h3>
                     <p class="text-ember-600 font-medium mb-4">Linguistics/Anthropology</p>
-                    <p class="text-ink-600 text-sm">Professor at National Museum of UFRJ. Specialist in South American
-                        language families.</p>
+                    <p class="text-ink-600 text-sm mb-4">Professor in the Linguistics Section of the Anthropology
+                        Department at the National Museum of UFRJ. Specialist in historical-comparative linguistics of
+                        the Tupi-Guarani, Arawak, and Carib families of South America.</p>
                 </div>
-                <div class="card p-8 text-center reveal">
+
+                <!-- Carolina -->
+                <div class="card p-8 text-center reveal animation-delay-600">
                     <img src="/images/carolina.jpeg" alt="Carolina Aragon" class="team-photo mx-auto mb-6">
                     <h3 class="font-serif text-xl font-semibold text-ink-900 mb-1">Carolina Aragon</h3>
                     <p class="text-ember-600 font-medium mb-4">Anthropological Linguistics</p>
-                    <p class="text-ink-600 text-sm">PhD from University of Hawai'i. Professor at UFPB.</p>
+                    <p class="text-ink-600 text-sm mb-4">MA from the University of Brasilia and PhD in Linguistics from
+                        the University of Hawai'i. Professor at the Department of Portuguese Language and Linguistics at
+                        UFPB. Linguistic and ethnographic research with lowland Amazon peoples.</p>
                 </div>
-                <div class="card p-8 text-center reveal">
+
+                <!-- Tiago -->
+                <div class="card p-8 text-center reveal animation-delay-700">
                     <img src="/images/tiagotresoldi.jpg" alt="Tiago Tresoldi" class="team-photo mx-auto mb-6">
                     <h3 class="font-serif text-xl font-semibold text-ink-900 mb-1">Tiago Tresoldi</h3>
                     <p class="text-ember-600 font-medium mb-4">Computational Historical Linguistics/Data Analysis</p>
@@ -114,16 +196,60 @@
         </div>
     </section>
 
+    <!-- CTA Section -->
     <section class="section-alt">
         <div class="container-narrow text-center">
             <h2 class="section-heading reveal">Join us</h2>
+            <p class="section-subheading mx-auto mb-8 reveal">We are always looking for collaborators committed to the
+                revitalization of Indigenous languages.</p>
             <a href="/en/contact.html" class="btn-primary reveal">Get in Touch</a>
         </div>
     </section>
 
-    <footer class="bg-terra-900 text-terra-200 py-12">
-        <div class="container-wide px-4 text-center">
-            <p class="text-sm text-terra-400">© 2026 Indigenous Languages Platform. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-terra-900 text-terra-200 py-16">
+        <div class="container-wide px-4 md:px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/logo.svg" alt="Logo" class="w-10 h-10">
+                        <span class="font-serif text-lg font-semibold text-white">Indigenous Languages Platform</span>
+                    </div>
+                    <p class="text-sm text-terra-300">Revitalization and documentation of Brazilian indigenous languages
+                        with community governance.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/en/" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/en/platforms.html" class="hover:text-white transition-colors">Platforms</a></li>
+                        <li><a href="/en/team.html" class="hover:text-white transition-colors">Team</a></li>
+                        <li><a href="/en/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>info@plataformasindigenas.org</li>
+                        <li>Mato Grosso, Brazil ↔ Germany</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Social Media</h4>
+                    <a href="https://instagram.com/plataformasindigenas" target="_blank"
+                        class="inline-flex items-center gap-2 text-sm hover:text-white transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                        @plataformasindigenas
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-terra-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-terra-400">© 2026 Indigenous Languages Platform. All rights reserved.</p>
+                <p class="text-sm text-terra-400">LGPD Compliance</p>
+            </div>
         </div>
     </footer>
 
