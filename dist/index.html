@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Línguas Indígenas | Revitalização e Documentação</title>
+    <meta name="description"
+        content="Projeto de revitalização e documentação de línguas indígenas brasileiras através de plataformas digitais, com governança comunitária e ética.">
+    <link rel="alternate" hreflang="en" href="/assets/index-Br9psGVO.html">
+    <link rel="alternate" hreflang="es" href="/assets/index-DYzayu5z.html">
+    <link rel="alternate" hreflang="pt" href="/assets/index-ZAQvzgnM.html">
+    <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <script type="module" crossorigin src="/assets/styles-BDqXG3CD.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/styles-CgG-KqpS.css">
+</head>
+
+<body class="bg-terra-50">
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass">
+        <nav class="container-wide flex items-center justify-between px-4 md:px-6 py-3">
+            <a href="/" class="flex items-center gap-3">
+                <img src="/logo.svg" alt="Logo" class="w-10 h-10">
+                <span class="font-serif text-lg font-semibold text-terra-700 hidden sm:block">Plataforma de Línguas
+                    Indígenas</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6">
+                <a href="#problema" class="nav-link">O Problema</a>
+                <a href="#abordagem" class="nav-link">Abordagem</a>
+                <a href="/plataformas.html" class="nav-link">Plataformas</a>
+                <a href="/equipe.html" class="nav-link">Equipe</a>
+                <a href="/contato.html" class="nav-link">Contato</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="lang-switcher">
+                    <button class="lang-btn-active">PT</button>
+                    <button onclick="switchLanguage('en')" class="lang-btn-inactive">EN</button>
+                    <button onclick="switchLanguage('es')" class="lang-btn-inactive">ES</button>
+                </div>
+                <button id="menu-toggle" class="md:hidden p-2">
+                    <svg class="w-6 h-6 text-ink-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="flex justify-between items-center p-4 border-b border-terra-200">
+            <span class="font-serif text-lg font-semibold text-terra-700">Menu</span>
+            <button id="menu-close" class="p-2">
+                <svg class="w-6 h-6 text-ink-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <nav class="p-6 space-y-4">
+            <a href="#problema" class="mobile-nav-link block text-lg text-ink-700 py-2">O Problema</a>
+            <a href="#abordagem" class="mobile-nav-link block text-lg text-ink-700 py-2">Abordagem</a>
+            <a href="/plataformas.html" class="mobile-nav-link block text-lg text-ink-700 py-2">Plataformas</a>
+            <a href="/equipe.html" class="mobile-nav-link block text-lg text-ink-700 py-2">Equipe</a>
+            <a href="/contato.html" class="mobile-nav-link block text-lg text-ink-700 py-2">Contato</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="hero-slide active">
+                <img src="/images/EN-escola.jpeg" alt="Escola indígena" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-terra-900/80 via-terra-900/60 to-transparent"></div>
+            </div>
+            <div class="hero-slide">
+                <img src="/images/boeEnoMoto.jpg" alt="Comunidade Bororo" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-terra-900/80 via-terra-900/60 to-transparent"></div>
+            </div>
+            <div class="hero-slide">
+                <img src="/images/formacao.jpg" alt="Formação de professores" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-terra-900/80 via-terra-900/60 to-transparent"></div>
+            </div>
+        </div>
+        <div class="relative container-wide px-4 md:px-6">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-display-xl font-serif font-bold text-white mb-6 animate-fade-up">
+                    Línguas vivas,<br><span class="text-ember-400">culturas fortalecidas</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-terra-100 mb-8 animate-fade-up animation-delay-200">
+                    Revitalizamos e documentamos línguas indígenas brasileiras através de tecnologia, educação e
+                    governança comunitária.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 animate-fade-up animation-delay-300">
+                    <a href="/plataformas.html" class="btn-primary">Explorar Plataformas</a>
+                    <a href="/contato.html"
+                        class="btn bg-white/10 text-white border border-white/30 hover:bg-white/20">Seja Parceiro</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg class="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problema" class="section bg-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30" style="background-image: url('/patterns/weave.svg');"></div>
+        <div class="container-wide relative">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-block px-4 py-1 bg-ember-100 text-ember-700 rounded-full text-sm font-semibold mb-4">O
+                    Desafio</span>
+                <h2 class="section-heading">Por que agir agora?</h2>
+                <p class="section-subheading mx-auto">Das mais de 270 línguas indígenas faladas no Brasil, muitas
+                    enfrentam risco de extinção. Cada língua perdida é um universo de conhecimento que desaparece.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-8 text-center reveal animation-delay-100">
+                    <div class="w-16 h-16 bg-ember-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-ember-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-semibold text-ink-900 mb-3">Línguas em Risco</h3>
+                    <p class="text-ink-600">Mais de 40% das línguas indígenas brasileiras estão ameaçadas de extinção
+                        nas próximas décadas.</p>
+                </div>
+                <div class="card p-8 text-center reveal animation-delay-200">
+                    <div class="w-16 h-16 bg-terra-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-terra-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-semibold text-ink-900 mb-3">Materiais Escassos</h3>
+                    <p class="text-ink-600">A maioria das línguas não possui materiais didáticos adequados para uso nas
+                        escolas indígenas.</p>
+                </div>
+                <div class="card p-8 text-center reveal animation-delay-300">
+                    <div class="w-16 h-16 bg-forest-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-semibold text-ink-900 mb-3">Transmissão Ameaçada</h3>
+                    <p class="text-ink-600">Jovens indígenas frequentemente perdem contato com suas línguas ancestrais
+                        durante a educação formal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="abordagem" class="section-alt">
+        <div class="container-wide">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-block px-4 py-1 bg-forest-100 text-forest-700 rounded-full text-sm font-semibold mb-4">Nossa
+                    Abordagem</span>
+                <h2 class="section-heading">Como trabalhamos</h2>
+                <p class="section-subheading mx-auto">Um processo colaborativo que coloca as comunidades no centro de
+                    cada decisão.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Phase 1 -->
+                <div class="card-hover p-6 reveal">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="flex-shrink-0 w-10 h-10 bg-ember-500 text-white rounded-full flex items-center justify-center font-bold">1</span>
+                        <div>
+                            <h3 class="font-serif text-lg font-semibold text-ink-900 mb-2">Consentimento Comunitário
+                            </h3>
+                            <p class="text-ink-600 text-sm">Acordos de CLPI garantem que as comunidades controlam todo o
+                                processo e seus dados.</p>
+                        </div>
+                    </div>
+                    <img src="/images/fpic.jpg" alt="Reunião de consentimento"
+                        class="w-full h-32 object-cover rounded-lg mt-4">
+                </div>
+                <!-- Phase 2 -->
+                <div class="card-hover p-6 reveal animation-delay-100">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="flex-shrink-0 w-10 h-10 bg-ember-500 text-white rounded-full flex items-center justify-center font-bold">2</span>
+                        <div>
+                            <h3 class="font-serif text-lg font-semibold text-ink-900 mb-2">Coleta de Dados</h3>
+                            <p class="text-ink-600 text-sm">Documentação linguística colaborativa com falantes, anciãos
+                                e educadores locais.</p>
+                        </div>
+                    </div>
+                    <img src="/images/coleta.jpg" alt="Coleta de dados"
+                        class="w-full h-32 object-cover rounded-lg mt-4">
+                </div>
+                <!-- Phase 3 -->
+                <div class="card-hover p-6 reveal animation-delay-200">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="flex-shrink-0 w-10 h-10 bg-ember-500 text-white rounded-full flex items-center justify-center font-bold">3</span>
+                        <div>
+                            <h3 class="font-serif text-lg font-semibold text-ink-900 mb-2">Plataformas Digitais</h3>
+                            <p class="text-ink-600 text-sm">Dicionários, corpus linguísticos e ferramentas de
+                                aprendizagem acessíveis online.</p>
+                        </div>
+                    </div>
+                    <img src="/images/online.jpg" alt="Plataforma online"
+                        class="w-full h-32 object-cover rounded-lg mt-4">
+                </div>
+                <!-- Phase 4 -->
+                <div class="card-hover p-6 reveal animation-delay-300">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="flex-shrink-0 w-10 h-10 bg-ember-500 text-white rounded-full flex items-center justify-center font-bold">4</span>
+                        <div>
+                            <h3 class="font-serif text-lg font-semibold text-ink-900 mb-2">IA e Machine Learning</h3>
+                            <p class="text-ink-600 text-sm">Modelos de linguagem treinados localmente para auxiliar na
+                                geração de conteúdo.</p>
+                        </div>
+                    </div>
+                    <img src="/images/MLM.jpg" alt="Inteligência Artificial"
+                        class="w-full h-32 object-cover rounded-lg mt-4">
+                </div>
+                <!-- Phase 5 -->
+                <div class="card-hover p-6 reveal animation-delay-400">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="flex-shrink-0 w-10 h-10 bg-ember-500 text-white rounded-full flex items-center justify-center font-bold">5</span>
+                        <div>
+                            <h3 class="font-serif text-lg font-semibold text-ink-900 mb-2">Materiais Pedagógicos</h3>
+                            <p class="text-ink-600 text-sm">Livros, cartilhas e recursos impressos para uso em sala de
+                                aula.</p>
+                        </div>
+                    </div>
+                    <img src="/images/material.jpg" alt="Materiais pedagógicos"
+                        class="w-full h-32 object-cover rounded-lg mt-4">
+                </div>
+                <!-- Phase 6 -->
+                <div class="card-hover p-6 reveal animation-delay-500">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="flex-shrink-0 w-10 h-10 bg-ember-500 text-white rounded-full flex items-center justify-center font-bold">6</span>
+                        <div>
+                            <h3 class="font-serif text-lg font-semibold text-ink-900 mb-2">Formação de Professores</h3>
+                            <p class="text-ink-600 text-sm">Capacitação contínua para educadores indígenas utilizarem os
+                                recursos.</p>
+                        </div>
+                    </div>
+                    <img src="/images/formacao.jpg" alt="Formação de professores"
+                        class="w-full h-32 object-cover rounded-lg mt-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Section -->
+    <section id="governanca" class="section-dark relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('/patterns/diamond-grid.svg');">
+        </div>
+        <div class="container-wide relative">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-block px-4 py-1 bg-white/10 text-terra-200 rounded-full text-sm font-semibold mb-4">Governança</span>
+                <h2 class="text-display-md md:text-display-lg font-serif text-white mb-4">Ética e Respeito</h2>
+                <p class="text-lg text-terra-200 max-w-2xl mx-auto">Nosso trabalho é guiado por princípios rigorosos de
+                    consentimento e proteção de conhecimentos tradicionais.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 reveal">
+                    <div class="w-12 h-12 bg-ember-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-ember-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">CLPI/FPIC</h3>
+                    <p class="text-terra-300 text-sm">Consentimento Livre, Prévio e Informado em todos os projetos.</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 reveal animation-delay-100">
+                    <div class="w-12 h-12 bg-forest-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-forest-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Direitos de Dados</h3>
+                    <p class="text-terra-300 text-sm">Cada comunidade define suas próprias regras de acesso.</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 reveal animation-delay-200">
+                    <div class="w-12 h-12 bg-terra-500/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-terra-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Proteção Sensível</h3>
+                    <p class="text-terra-300 text-sm">Conteúdos sagrados protegidos por padrões antropológicos.</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 reveal animation-delay-300">
+                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">DOI e Citação</h3>
+                    <p class="text-terra-300 text-sm">Todos os recursos recebem identificadores digitais permanentes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impacto" class="section bg-white">
+        <div class="container-wide">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-block px-4 py-1 bg-terra-100 text-terra-700 rounded-full text-sm font-semibold mb-4">Impacto</span>
+                <h2 class="section-heading">Nossos Resultados</h2>
+                <p class="section-subheading mx-auto">Números que representam comunidades fortalecidas e culturas
+                    preservadas.</p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="text-center reveal">
+                    <div class="metric-number" data-counter="12">0</div>
+                    <div class="metric-label">Línguas documentadas</div>
+                </div>
+                <div class="text-center reveal animation-delay-100">
+                    <div class="metric-number" data-counter="45">0</div>
+                    <div class="metric-label">Escolas atendidas</div>
+                </div>
+                <div class="text-center reveal animation-delay-200">
+                    <div class="metric-number" data-counter="280">0</div>
+                    <div class="metric-label">Professores capacitados</div>
+                </div>
+                <div class="text-center reveal animation-delay-300">
+                    <div class="metric-number" data-counter="15000" data-suffix="+">0</div>
+                    <div class="metric-label">Entradas em dicionários</div>
+                </div>
+            </div>
+            <!-- Success Story -->
+            <div class="card p-8 md:p-12 bg-gradient-to-br from-terra-50 to-terra-100 reveal">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span class="badge-active mb-4">História de Sucesso</span>
+                        <h3 class="font-serif text-2xl font-semibold text-ink-900 mb-4">Escola Enawenê-Nawê</h3>
+                        <p class="text-ink-600 mb-4">A parceria com a Escola Estadual Indígena Enawenê-Nawê resultou na
+                            criação de materiais didáticos bilíngues utilizados diariamente por professores e alunos,
+                            fortalecendo a transmissão da língua para as novas gerações.</p>
+                        <blockquote class="border-l-4 border-ember-500 pl-4 italic text-ink-700">"Os materiais
+                            transformaram nossa forma de ensinar. Agora nossos alunos podem aprender em sua própria
+                            língua."</blockquote>
+                        <p class="text-sm text-ink-500 mt-2">— Michel Correa, Diretor Escolar</p>
+                    </div>
+                    <img src="/images/EN-escola.jpeg" alt="Escola Enawenê-Nawê"
+                        class="rounded-2xl shadow-warm-lg w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Overview -->
+    <section id="plataformas" class="section-alt">
+        <div class="container-wide">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-block px-4 py-1 bg-forest-100 text-forest-700 rounded-full text-sm font-semibold mb-4">Nossas
+                    Plataformas</span>
+                <h2 class="section-heading">Explore as Línguas</h2>
+                <p class="section-subheading mx-auto">Dicionários, corpus linguísticos e materiais educacionais para
+                    cada comunidade parceira.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Bororo -->
+                <a href="https://boeenomoto.onrender.com" target="_blank" class="card-interactive p-6 reveal">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-serif text-xl font-semibold text-ink-900">Bororo (Boe Eno Moto)</h3>
+                        <span class="badge-active">Ativo</span>
+                    </div>
+                    <ul class="feature-list mb-4">
+                        <li class="feature-item">Dicionário completo</li>
+                        <li class="feature-item">Corpus (UD + paralelo)</li>
+                        <li class="feature-item">Etnobotânica e Fauna</li>
+                        <li class="feature-item">Materiais escolares</li>
+                    </ul>
+                    <span class="text-ember-600 font-medium text-sm inline-flex items-center gap-1">
+                        Acessar plataforma
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </a>
+                <!-- Xavante -->
+                <a href="https://xavante.pythonanywhere.com" target="_blank"
+                    class="card-interactive p-6 reveal animation-delay-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-serif text-xl font-semibold text-ink-900">Xavante</h3>
+                        <span class="badge-beta">Beta</span>
+                    </div>
+                    <ul class="feature-list mb-4">
+                        <li class="feature-item">Dicionário</li>
+                        <li class="feature-item">Fauna</li>
+                    </ul>
+                    <span class="text-ember-600 font-medium text-sm inline-flex items-center gap-1">
+                        Acessar plataforma
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </a>
+                <!-- Enawene-Nawe -->
+                <a href="https://enawenenawe.pythonanywhere.com" target="_blank"
+                    class="card-interactive p-6 reveal animation-delay-200">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-serif text-xl font-semibold text-ink-900">Enawenê-Nawê</h3>
+                        <span class="badge-beta">Beta</span>
+                    </div>
+                    <ul class="feature-list mb-4">
+                        <li class="feature-item">Dicionário</li>
+                    </ul>
+                    <span class="text-ember-600 font-medium text-sm inline-flex items-center gap-1">
+                        Acessar plataforma
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="text-center mt-10 reveal">
+                <a href="/plataformas.html" class="btn-secondary">Ver Todas as Plataformas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="parceiros" class="section bg-white">
+        <div class="container-wide">
+            <div class="text-center mb-12 reveal">
+                <span
+                    class="inline-block px-4 py-1 bg-terra-100 text-terra-700 rounded-full text-sm font-semibold mb-4">Parceiros</span>
+                <h2 class="section-heading">Quem nos apoia</h2>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 reveal">
+                <a href="https://unifacc.com.br" target="_blank"
+                    class="grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100">
+                    <img src="/images/logoUnifacc.png" alt="Unifacc" class="h-16 object-contain">
+                </a>
+                <a href="https://www.missaosalesiana.org.br" target="_blank"
+                    class="grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100">
+                    <img src="/images/logoMS.jpg" alt="Missão Salesiana" class="h-16 object-contain">
+                </a>
+                <a href="https://uni-tuebingen.de" target="_blank"
+                    class="grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100">
+                    <img src="/images/logoTueb.png.avif" alt="Universidade de Tübingen"
+                        class="h-16 object-contain">
+                </a>
+            </div>
+            <div class="text-center mt-12 reveal">
+                <p class="text-ink-600 mb-4">Interessado em se tornar um parceiro?</p>
+                <a href="/contato.html" class="btn-primary">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-terra-900 text-terra-200 py-16">
+        <div class="container-wide px-4 md:px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/logo.svg" alt="Logo" class="w-10 h-10">
+                        <span class="font-serif text-lg font-semibold text-white">Plataforma de Línguas Indígenas</span>
+                    </div>
+                    <p class="text-sm text-terra-300">Revitalização e documentação de línguas indígenas brasileiras com
+                        governança comunitária.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Navegação</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/" class="hover:text-white transition-colors">Início</a></li>
+                        <li><a href="/plataformas.html" class="hover:text-white transition-colors">Plataformas</a></li>
+                        <li><a href="/equipe.html" class="hover:text-white transition-colors">Equipe</a></li>
+                        <li><a href="/contato.html" class="hover:text-white transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contato</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>info@plataformasindigenas.org</li>
+                        <li>Mato Grosso, Brasil ↔ Alemanha</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Redes Sociais</h4>
+                    <a href="https://instagram.com/plataformasindigenas" target="_blank"
+                        class="inline-flex items-center gap-2 text-sm hover:text-white transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                        @plataformasindigenas
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-terra-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-terra-400">© 2026 Plataforma de Línguas Indígenas. Todos os direitos reservados.
+                </p>
+                <p class="text-sm text-terra-400">Conformidade com LGPD</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

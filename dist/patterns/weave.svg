@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <pattern id="weavePattern" patternUnits="userSpaceOnUse" width="60" height="60">
+      <!-- Horizontal strands -->
+      <rect x="0" y="10" width="60" height="3" fill="#C4854D" opacity="0.15"/>
+      <rect x="0" y="30" width="60" height="3" fill="#C4854D" opacity="0.15"/>
+      <rect x="0" y="50" width="60" height="3" fill="#C4854D" opacity="0.15"/>
+      
+      <!-- Vertical strands (going over/under) -->
+      <rect x="10" y="0" width="3" height="10" fill="#8B5A2B" opacity="0.12"/>
+      <rect x="10" y="13" width="3" height="17" fill="#8B5A2B" opacity="0.12"/>
+      <rect x="10" y="33" width="3" height="17" fill="#8B5A2B" opacity="0.12"/>
+      <rect x="10" y="53" width="3" height="7" fill="#8B5A2B" opacity="0.12"/>
+      
+      <rect x="30" y="0" width="3" height="10" fill="#8B5A2B" opacity="0.12"/>
+      <rect x="30" y="13" width="3" height="17" fill="#8B5A2B" opacity="0.12"/>
+      <rect x="30" y="33" width="3" height="17" fill="#8B5A2B" opacity="0.12"/>
+      <rect x="30" y="53" width="3" height="7" fill="#8B5A2B" opacity="0.12"/>
+      
+      <rect x="50" y="0" width="3" height="10" fill="#8B5A2B" opacity="0.12"/>
+      <rect x="50" y="13" width="3" height="17" fill="#8B5A2B" opacity="0.12"/>
+      <rect x="50" y="33" width="3" height="17" fill="#8B5A2B" opacity="0.12"/>
+      <rect x="50" y="53" width="3" height="7" fill="#8B5A2B" opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#weavePattern)"/>
+</svg>
